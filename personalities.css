@@ -1,0 +1,464 @@
+#personality_bar ul li.personality span {
+     font-family: 'Open Sans', sans-serif;
+     cursor:pointer;
+     color: #8b9bac;
+     font-size:13px;
+     font-style:normal;
+     line-height:1em;
+     font-weight:bold;
+     font-variant:normal;
+     position: relative;
+     float:left;
+     padding: 10px 22px 17px 10px;
+}
+#personality_bar_wrapper {
+     display:block!important;
+}
+html.no-touch #personality_bar ul li.personality span:hover:after {
+     content:'\F107';
+     font-size:1.2em;
+     position:absolute;
+     font-family:'FontAwesome';
+     top:9px;
+     right:8px;
+}
+#personality_bar_wrapper.open ul li.active span:after,
+html.no-touch #personality_bar_wrapper.open ul li.active span:hover:after {
+     content:'\f106';
+     font-size:1.2em;
+     position:absolute;
+     font-family:'FontAwesome';
+     top:9px;
+     right:8px;
+}
+html.no-touch #personality_bar ul li:hover,
+#personality_bar ul li.active {
+     background-color:#f4f5f9;
+}
+html.no-touch #personality_bar ul li:hover span,
+#personality_bar ul li.active span {
+     color:#1d5372;
+}
+#personality_bar ul li.personality div.desc_content a {
+     background: #3a6984;
+     color:white;
+     position:relative;
+     padding: 9px 27px 9px 15px;
+     text-decoration:none;
+     margin-top:1em;
+     font-size:14px;
+     line-height:1em;
+     float:left;
+}
+#personality_bar ul li.personality div.desc_content a:after {
+     content: '\F08E';
+     position:absolute;
+     font-family: 'FontAwesome';
+     right:6px;
+     top:10px;
+}
+body.desktop .mobile_only {
+     display:none;
+}
+body.desktop #personality_bar_wrapper {
+     background:#3C454E;
+     font-family:'Open Sans', sans-serif;
+     font-style: normal;
+     font-variant: normal;
+     -webkit-font-smoothing: antialiased;
+     width:100%;
+     height:50px;
+     overflow:hidden;
+     position:relative;
+     -webkit-transition: height 1s;
+     -moz-transition: height 1s;
+     -o-transition: height 1s;
+     transition: height 1s;
+}
+body.desktop #personality_bar_wrapper:after {
+     content: ' ';
+     position:absolute;
+     bottom:0;
+     left:0;
+     right:0;
+     height:10px;
+     background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.1)));
+     background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+     background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+     background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+     background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#20000000',GradientType=0 );
+
+}
+body.desktop #personality_bar {
+     height:50px;
+     color:#8A9AAB;
+     width:1080px;
+     margin: 0 auto;
+     font-family: 'Open Sans', sans-serif;
+}
+body.desktop #personality_bar_wrapper.open {
+     height:335px;
+}
+body.desktop #personality_bar a.branding_logo {
+     float:left;
+     margin-top: 3px;
+     margin-left: 1em;
+     height:24px;
+     width:248px;
+     background-repeat: no-repeat;
+     border-right: 1px solid #717E87;
+     position:relative;
+     text-indent:-2000px;
+     background-image:url('//a248.e.akamai.net/f/1611/26335/9h/dramsey.download.akamai.com/23572/personality_bar/images/personalities_branding.png');
+}
+body.desktop #personality_bar_mobile_icon {
+     display:none;
+}
+body.desktop .personality_nav_prev,
+body.desktop .personality_nav_next {
+     line-height:1;
+     overflow:hidden;
+     position:absolute;
+     top:120px;
+     z-index:100;
+     left:50%;
+     cursor:pointer;
+     margin-left:-540px;
+     font-family:'FontAwesome';
+     font-size:8em;
+}
+body.desktop .personality_nav_next {
+     margin-left:490px;
+}
+body.desktop #personality_bar ul {
+     float:right;
+     list-style:none;
+     width:100%;
+     padding:0;
+     margin-left: 0px;
+     margin-right: 0px;
+     margin-top: 10px;
+}
+body.desktop #personality_bar ul li.personality {
+     float:left;
+     margin-right: 2px;
+}
+body.desktop body.desktop_only #personality_bar ul li.personality span {
+     text-transform:uppercase;
+}
+body.desktop #personality_bar ul li.personality div.desc_wrapper {
+     display:none;
+     background: rgb(244,245,249);
+     background: -moz-linear-gradient(top,  rgba(244,245,249,1) 0%, rgba(218,221,227,1) 100%);
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(244,245,249,1)), color-stop(100%,rgba(218,221,227,1)));
+     background: -webkit-linear-gradient(top,  rgba(244,245,249,1) 0%,rgba(218,221,227,1) 100%);
+     background: -o-linear-gradient(top,  rgba(244,245,249,1) 0%,rgba(218,221,227,1) 100%);
+     background: -ms-linear-gradient(top,  rgba(244,245,249,1) 0%,rgba(218,221,227,1) 100%);
+     background: linear-gradient(to bottom,  rgba(244,245,249,1) 0%,rgba(218,221,227,1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5f9', endColorstr='#dadde3',GradientType=0 );
+     color:#3C454E;
+     position:absolute;
+     bottom:0;
+     top:50px;
+     left:0;
+     right:0;
+}
+body.desktop #personality_bar ul li.personality div.desc_content {
+     max-width:800px;
+     margin:0 auto;
+     padding-top:39px;
+}
+
+@media screen and (max-width: 800px){
+     body.desktop #personality_bar ul li.personality div.desc_content img {
+          width:35%;
+     }
+     body.desktop #personality_bar ul li.personality div.desc_content p {
+          padding-right:20px;
+     }
+
+}
+
+body.desktop #personality_bar ul li.personality div.desc_content img {
+     float:left;
+     margin-right:31px;
+     margin-bottom:56px;
+}
+body.desktop #personality_bar ul li.personality div.desc_content h2,
+body.desktop #personality_bar ul li.personality div.desc_content h3,
+body.desktop #personality_bar ul li.personality div.desc_content p {
+     font-family: 'Open Sans', sans-serif;
+}
+body.desktop #personality_bar ul li.personality div.desc_content h2 {
+     color: #1d5372;
+     line-height:1em;
+     font-size: 24px;
+     font-weight:bold;
+     margin-bottom: 0;
+     margin-top:0;
+}
+body.desktop #personality_bar ul li.personality div.desc_content h3 {
+     color: #2a688c;
+     line-height:1em;
+     font-size: 14px;
+     font-style: italic;
+     margin-top: 2px;
+}
+body.desktop #personality_bar ul li.personality div.desc_content p {
+     color:#383838;
+     font-size:14px;
+     line-height:20px;
+     margin-bottom:0;
+}
+body.desktop #personality_bar {
+     width:1080px;
+}
+
+@media screen and (max-width: 1100px) {
+     body.desktop  #personality_bar a.branding_logo {
+          width:31px;
+          margin-left:1em;
+     }
+     body.desktop #personality_bar ul {
+          margin-left: 0px;
+     }
+}
+@media screen and (min-width:768px) and (max-width: 1100px) {
+     body.desktop  #personality_bar ul li.personality {
+          width:10%; 
+     }
+     body.desktop  #personality_bar ul li.personality span {
+          text-align: center;
+          padding-top:3px;
+     }
+     body.desktop  #personality_bar ul li.personality.last span {
+          height:40px;
+     }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1120px) {
+     body.desktop .personality_nav_prev,
+     body.desktop .personality_nav_next {
+          left:10px;
+          margin-left:0;
+          font-size:8em;
+     }
+     body.desktop .personality_nav_next {
+          right:10px;
+          left:auto;
+     }
+}
+@media screen and (min-width:768px) and (max-width:950px) {
+     body.desktop .personality_nav_prev,
+     body.desktop .personality_nav_next {
+          top:41px;
+          font-size:4em;
+     }
+}
+@media screen and (max-width: 767px) {
+     .desktop_only {
+          display:none;
+     }
+     #header-primary .branding {
+          margin-top:5px;
+     }
+     #header-primary .branding .logo-rc {
+          font-size:2em;
+     }
+     #personality_bar_wrapper:after{
+          content: '';
+          width:20px;
+          left:0;
+          top:0;
+          bottom:0;
+          position:absolute;
+          background: -moz-linear-gradient(left,  rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 100%);
+          background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.35)), color-stop(100%,rgba(0,0,0,0)));
+          background: -webkit-linear-gradient(left,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+          background: -o-linear-gradient(left,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+          background: -ms-linear-gradient(left,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+          background: linear-gradient(to right,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3000000', endColorstr='#00000000',GradientType=1 );
+     }
+     .mobile_header {
+          width:100%;
+          padding: 1em 1em 0;
+     }
+     #personality_bar_wrapper p{
+          color:white;
+          font-size:13px;
+          font-weight:400;
+          padding:2em;
+          margin:0;
+     }
+     body.mobile #personality_bar_wrapper {
+          display:none;
+          color: white;
+          background:#3B454E;
+          position: absolute;
+          top: 0;
+          right: 100%;
+          font-size: 24px;
+          font-weight: 600;
+          margin:0;
+          z-index: 50;
+          width:80%;
+          display:block;
+     }
+     body.mobile #personality_bar_wrapper.mobile_open {
+          margin-right: -100%;
+     }
+     body.mobile.active-nav #personality_bar_mobile_icon {
+          right:-100px;
+     }
+     body.mobile #personality_bar_mobile_icon {
+          position: absolute;
+          background: url('//a248.e.akamai.net/f/1611/26335/9h/dramsey.download.akamai.com/23572/personality_bar/images/personalities_nav_icon.png');
+          right: 15px;
+          top:6px;
+          width: 52px;
+          height: 52px;
+          font-size: 30px;
+          z-index: 550;
+          color: red;
+          display: block!important;
+          margin: 0;
+          padding: 0;
+     }
+     .personality_nav_prev,
+     .personality_nav_next {
+          display:none;
+     }
+     #personality_bar_wrapper {
+          color: white;
+          position: absolute;
+          top: 0;
+          right: 100%;
+          font-size: 24px;
+          font-weight: 600;
+          margin-right: -100%;
+          z-index: 50;
+          width:100%;
+          display:block;
+     }
+     #personality_bar_wrapper ul {
+          width:100%;
+          float:left;
+          padding:0;
+          margin:0;
+          list-style:none;
+     }
+     #personality_bar_wrapper ul li{
+          float:left;
+          width:100%;
+          border-bottom:1px solid #717E87;
+          position:relative;
+     }
+     html.no-touch #personality_bar_wrapper ul li:hover {
+          border-bottom:1px solid #f4f5f9;
+     }
+     #personality_bar_wrapper ul li.active {
+          background:#f4f5f9;
+          color:#383838;
+     }
+     html.no-touch #personality_bar_wrapper ul li.active {
+          border-bottom:1px solid #f4f5f9;
+     }
+     #personality_bar_wrapper ul li.personality .headshot {
+          width: 70px;
+          height: 70px;
+          float:left;
+          border-radius: 50%;
+          background-size: cover;
+          background-position-x: 44%;
+          margin: .5em .75em;
+     }
+     #personality_bar_wrapper ul li.personality_ramsey .headshot {
+          background-position:-20px 0px;
+     }
+     #personality_bar_wrapper ul li.personality_cruze .headshot {
+          background-position: -41px 0px;
+          background-size: 220%;
+     }
+     #personality_bar_wrapper ul li.personality_hogan .headshot {
+          background-position: -20px 0px;
+          background-size: 200%;
+     }
+     #personality_bar_wrapper ul li.personality_gutierrez .headshot {
+          background-position: -35px 0px;
+          background-size: 210%;
+     }
+     #personality_bar_wrapper ul li.personality_brown .headshot {
+          background-position: -44px 0px;
+          background-size: 200%;
+     }
+     #personality_bar_wrapper ul li.personality_wright .headshot {
+          background-position: -52px 0px;
+          background-size: 210%;
+     }
+     #personality_bar_wrapper ul li.personality span {
+          color: white;
+          padding-top: 38px;
+          padding-bottom: 43px;
+          left: 0;
+          position: absolute;
+          padding-left: 97px;
+          width: 100%;
+          background:none;
+     }
+     html.no-touch #personality_bar_wrapper ul li:hover span,
+     #personality_bar_wrapper ul li.active span {
+          color:#1d5372;
+     }
+     #personality_bar ul li.personality span:after {
+          content:'\F107';
+          font-size:1.2em;
+          font-family:'FontAwesome';
+          margin-left: 10px;
+     }
+     html.touch #personality_bar ul li.personality span:hover:after,
+     html.no-touch #personality_bar ul li.personality span:hover:after {
+          content:'\F107';
+          font-size:1.2em;
+          position:relative;
+          font-family:'FontAwesome';
+          top:auto;
+          right:auto;
+     }
+     #personality_bar_wrapper ul li.active span:after{
+          content:'\f106';
+          font-size:1.2em;
+          font-family:'FontAwesome';
+          margin-left: 10px;
+     }
+     #personality_bar_wrapper ul li.active .desc_content p {
+          font-size:13px;
+          font-weight:400;
+          font-family:'Open Sans', sans-serif;
+          color:#383838;
+          padding-left:26px;
+          padding-top: 0;
+          margin-top: -10px;
+          float: left;
+          margin-bottom:0;
+          padding-bottom:0;
+     }
+     #personality_bar_wrapper ul li.active .desc_content a {
+          margin-right:16px;
+          margin-bottom:2em;
+          font-weight:400;
+          float:right;
+     }
+     #personality_bar_mobile_icon {
+          position: absolute;
+          right: 15px;
+          top: 15px;
+          font-size: 30px;
+          z-index: 550;
+          color: red;
+          display: block;
+     }
+}
